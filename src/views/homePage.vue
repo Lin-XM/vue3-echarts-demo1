@@ -32,7 +32,6 @@
     import ItemTwo from '../components/ItemTwo.vue'
     import ItemThree from '../components/ItemThree.vue'
     import ItemFour from '../components/ItemFour.vue'
-    import {inject } from 'vue'
 
 
     export default {
@@ -41,7 +40,6 @@
             itemPage, ItemOne, ItemTwo, ItemThree, ItemFour
         },
         setup(){
-            let $ehcarts = inject('echarts')
 
 
         }
@@ -54,7 +52,6 @@
             min-width: 1200px;
             max-width: 1960px;
             margin: 0 auto;
-            border: 1px solid red;
             padding: 0.1rem .1rem;
             display: flex;
 
@@ -82,7 +79,7 @@
             background-color: rgba(0, 0, 255, .2);
 
             h1 {
-                font-size: .375rem;
+                font-size: 40px;
                 color: white;
                 text-align: center;
                 line-height: 0.8rem;

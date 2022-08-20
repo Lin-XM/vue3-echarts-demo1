@@ -4,12 +4,16 @@
 
 <script>
   import * as echarts from 'echarts'
-
+  import axios from 'axios'
   import {provide } from 'vue'
+
+  // 设置基本路径
+  axios.defaults.baseURL='http://localhost:8888'
   export default {
     name: 'App',
     setup(){
       provide('echarts',echarts)
+      provide('axios',axios)
     }
   }
 </script>
