@@ -27,8 +27,6 @@
             function setData() {
                 xData = data.data.chartData.chartData.map(v => v.title)
                 yData = data.data.chartData.chartData.map(v => v.num)
-                console.log(xData);
-                console.log(yData);
             }
 
             onMounted(() => {

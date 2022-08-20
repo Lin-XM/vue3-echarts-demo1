@@ -12,7 +12,9 @@
                     <ItemTwo/>
                 </itemPage>
             </section>
-            <section class="itemCenter">中间</section>
+            <section class="itemCenter">
+                <MapPage />
+            </section>
             <section class="itemRight">
                 <itemPage>
                     <ItemThree/>
@@ -32,12 +34,13 @@
     import ItemTwo from '../components/ItemTwo.vue'
     import ItemThree from '../components/ItemThree.vue'
     import ItemFour from '../components/ItemFour.vue'
+    import MapPage from '../components/MapPage'
 
 
     export default {
         name: "homePage",
         components: {
-            itemPage, ItemOne, ItemTwo, ItemThree, ItemFour
+            itemPage, ItemOne, ItemTwo, ItemThree, ItemFour,MapPage
         },
         setup(){
 
