@@ -19,7 +19,7 @@
 </script>
 <style lang="scss" >
   body{
-    background:url("./assets/bg3.jpeg") top center no-repeat;
+    background:url("./assets/bg1.jpeg") top center no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
   }
