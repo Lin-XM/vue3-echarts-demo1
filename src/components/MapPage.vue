@@ -15,7 +15,7 @@
             let $echarts = inject('echarts')
 
             async function getState() {
-                mapData = await axios.get('http://127.0.0.1:8080/map/china.json')
+                mapData = await axios.get('http://localhost:8080/map/china.json')
             }
 
             onMounted(() => {
