@@ -29,11 +29,38 @@
                             xAxis: {
                                 type: 'category',
                                 data: data.data.chartData.chartData.day,
-                                boundaryGap: false
+                                boundaryGap: false,
+                                axisLine:{
+                                    lineStyle:{
+                                        color:"#fff"
+                                    }
+                                }
                             },
                             yAxis: {
                                 type: "value",
-
+                                axisLine:{
+                                    lineStyle:{
+                                        color:"#fff"
+                                    }
+                                }
+                            },
+                            tooltip:{
+                                trigger:'axis',                       // 提示触发类型
+                                axisPointer:{
+                                    type:'cross',
+                                    label:{
+                                        backgroundColor:"#e6b600"
+                                    }
+                                },
+                            },
+                            legend:{
+                                data:['服饰','数码','家电','家具','日化']
+                            },
+                            grid:{
+                                left:"4%",
+                                right:"4%",
+                                bottom:"8%",
+                                containLabel:true
                             },
                             series: [
                                 {
@@ -93,8 +120,6 @@
                                             ]
                                         )
                                     }
-
-
                                 },
                                 {
                                     name: '家电',
@@ -124,8 +149,6 @@
                                             ]
                                         )
                                     }
-
-
                                 },
                                 {
                                     name: '家具',
@@ -155,9 +178,6 @@
                                             ]
                                         )
                                     }
-
-
-
                                 },
                                 {
                                     name: '日化',
@@ -187,8 +207,6 @@
                                             ]
                                         )
                                     }
-
-
                                 },
 
                             ]

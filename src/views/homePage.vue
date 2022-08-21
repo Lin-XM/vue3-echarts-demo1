@@ -62,6 +62,7 @@
                 border: 1px solid black;
                 flex: 3;
                 color: white;
+
             }
 
             .itemCenter {

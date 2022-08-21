@@ -2,7 +2,6 @@
     <div class="Item3">
         <h2>库存统计</h2>
         <div class="content" id="threeContent">
-            图标内容
         </div>
     </div>
 </template>
@@ -24,11 +23,10 @@
 
             onMounted(() => {
                 getState().then(() => {
-                    console.log('饼图', data.data.chartData.chartData);
                     let myChart = $echarts.init(document.getElementById('threeContent'))
                     myChart.setOption({
                         legend:{
-                            top:'bottom'
+                            top:'20'
                         },
                         tooltip:{
                             show:true,
