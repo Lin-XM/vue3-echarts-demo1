@@ -20,7 +20,6 @@
 
             onMounted(() => {
                 getState().then(() => {
-                    console.log('map', mapData);
                     $echarts.registerMap('map', mapData.data)
                     let mapChart = $echarts.init(document.getElementById('map'))
                     mapChart.setOption({

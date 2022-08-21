@@ -23,7 +23,6 @@
 
             onMounted(() => {
                     getState().then(() => {
-                        console.log('折线图表', data);
                         let myChart = $ehcarts.init(document.getElementById('twoContent'))
                         myChart.setOption({
                             xAxis: {
@@ -59,7 +58,7 @@
                             grid:{
                                 left:"4%",
                                 right:"4%",
-                                bottom:"8%",
+                                bottom:"10%",
                                 containLabel:true
                             },
                             series: [

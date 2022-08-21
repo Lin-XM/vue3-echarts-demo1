@@ -36,27 +36,27 @@
                     setData()
                     // 处理数据
                     myChart.setOption({
-                        grid:{
-                            top:"3%",
-                            bottom:"10%",
-                            left:"1%",
-                            right:"6%",
-                            containLabel:true
+                        grid: {
+                            top: "3%",
+                            bottom: "10%",
+                            left: "3%",
+                            right: "6%",
+                            containLabel: true
                         },
                         xAxis: {
                             type: "value",
-                            axisLine:{
-                                lineStyle:{
-                                    color:"#fff"
+                            axisLine: {
+                                lineStyle: {
+                                    color: "#fff"
                                 }
                             }
                         },
                         yAxis: {
                             type: "category",
                             data: xData,
-                            axisLine:{
-                                lineStyle:{
-                                    color:"#fff"
+                            axisLine: {
+                                lineStyle: {
+                                    color: "#fff"
                                 }
                             }
 
@@ -65,22 +65,22 @@
                             {
                                 type: 'bar',
                                 data: yData,
-                                itemStyle:{
-                                    normal:{
-                                        borderRadius:[0,20,20,0],
+                                itemStyle: {
+                                    normal: {
+                                        borderRadius: [0, 20, 20, 0],
 
-                                        color:new $echarts.graphic.LinearGradient(0,0,1,0,[
+                                        color: new $echarts.graphic.LinearGradient(0, 0, 1, 0, [
                                             {
-                                                offset:0,
-                                                color:"#005eaa"
+                                                offset: 0,
+                                                color: "#005eaa"
                                             },
                                             {
-                                                offset:0.5,
-                                                color:"#339ca8"
+                                                offset: 0.5,
+                                                color: "#339ca8"
                                             },
                                             {
-                                                offset:1,
-                                                color:"#cda819"
+                                                offset: 1,
+                                                color: "#cda819"
                                             }
                                         ])
                                     }
